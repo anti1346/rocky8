@@ -3,5 +3,7 @@ FROM rockylinux/rockylinux:8
 # Install systemd
 RUN dnf -y install systemd
 
+RUN dnf -y install procps
+
 # Enable systemd init system
 CMD ["/usr/lib/systemd/systemd"]
