@@ -5,7 +5,10 @@
 ```
 docker build -t anti1346/rocky8:systemd -f Dockerfile.systemd . --no-cache
 ```
-
+##### docker push(Upload to Docker Hub)
+```
+docker push anti1346/rocky8:systemd
+```
 ##### Privileged 모드로 컨테이너 실행
 ```
 docker run -d --privileged --name rocky-systemd anti1346/rocky8:systemd
