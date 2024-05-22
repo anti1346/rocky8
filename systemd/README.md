@@ -21,6 +21,10 @@ docker inspect anti1346/rocky8:systemd --format='{{.Architecture}}'
 ```
 docker run -d --privileged --name rocky8-systemd anti1346/rocky8:systemd
 ```
+```
+docker run -d --privileged -p 2222:22 \
+--name rocky8-systemd anti1346/rocky8:systemd
+```
 ##### Docker 컨테이너에 대한 대화형 bash 쉘 세션을 시작
 ```
 docker exec -it rocky8-systemd bash
