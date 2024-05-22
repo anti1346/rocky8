@@ -6,7 +6,8 @@ docker buildx create --use
 ```
 ##### Buildx를 사용하여 지정된 플랫폼에 대한 이미지를 빌드하고 레포지토리에 푸시
 ```
-docker buildx build --platform linux/amd64,linux/arm64 --tag anti1346/rocky8:systemd --no-cache --push .
+docker buildx build --platform linux/amd64,linux/arm64 \
+--tag anti1346/rocky8:systemd --no-cache --push .
 ```
 ##### 빌드된 이미지 PULL
 ```
