@@ -1,6 +1,5 @@
-# Rocky Linux 8
+# Rocky Linux 8(systemd)
 
-#### Rocky Linux 8(systemd)
 ```
 docker buildx create --use
 ```
@@ -15,8 +14,7 @@ docker inspect anti1346/rocky8:systemd --format='{{.Architecture}}'
 ```
 ```
 docker run -d --privileged --name rocky8-systemd anti1346/rocky8:systemd
-``
+```
 ```
 docker exec -it rocky8-systemd bash
 ```
-
